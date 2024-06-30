@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F4F4F4;
+    font-family: 'calibri';
+}
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 1, 1);
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    clear: both;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgba(255, 0, 0, 0.651);
+    font-weight: 700;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.header .navigation ul li {
+    float: left;
+    position: relative;
+}
+
+.header .navigation ul li a {
+    font-size: 18px;
+    color: #F4F4F4;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.header .navigation ul li a:hover {
+    background-color: #D3413F;
+}
+
+.header .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(1, 1, 1, 1);
+    display: none;
+
+}
+
+.header .navigation ul li ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    clear: both;
+    display: block;
+    position: relative;
+    z-index: 1000;
+}
+
+.header .navigation ul li ul li {
+    width: 100%;
+}
+
+.header .navigation ul li:hover>ul {
+    display: initial;
+}
+
+#toggle,
+.header label {
+    display: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.menu {
+    width: 45px;
+    height: 35px;
+    color: #D3413F;
+}
+
+.hero {
+    min-height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Index/encabezado.jpg);
+}
+
+.hero-cursos {
+    min-height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Cursos/encabezado.jpg);
+}
+
+.hero-reparacion {
+    min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Reparacion/encabezado.jpg);
+}
+
+.hero-teclados {
+    min-height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Teclados/encabezado.jpg);
+}
+
+.hero-vientos {
+    min-height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Vientos/encabezado.jpg);
+}
+
+.hero-percusion {
+    min-height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Percusión/encabezado.jpg);
+}
+
+.hero-accesorios {
+    min-height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Accesorios/encabezado.jpeg);
+}
+
+.hero-guitarras {
+    min-height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Guitarras/encabezado.jpg);
+}
+
+.hero-bajos {
+    min-height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Bajos/encabezado.jpg);
+}
+
+.title {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    background-size: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: xx-large;
+}
+
+/* * ============================== */
+/* * ============ FOOTER ========== */
+/* * ============================== */
+.pie-pagina {
+    width: 100%;
+    background-color: #D3413F;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #df2c29;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #000000;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #df2c29;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* * ============ Botón ========== */
+
+.go-top-container {
+    box-sizing: border-box;
+    size: 10px;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+ 
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: grey;
+    color:#fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+}
+ 
+.go-top-button i {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: 0.2s;
+}
+ 
+.show {
+    z-index: 10;
+}
+ 
+.show .go-top-button {
+    animation: popup 0.3s ease-in-out;
+    width: 3.6rem;
+    height: 3.6rem;
+    z-index: 11;
+}
+ 
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* * =================================== */
+/* * ============ MEDIA QUERY ========== */
+/* * =================================== */
+
+/* * ============ Header ========== */
+@media(max-width:950px) {
+    .header label {
+        display: initial;
+    }
+
+    .header {
+        padding: 20px 10%;
+    }
+
+    .header .navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(1, 1, 1, 0.7);
+        display: none;
+    }
+
+    .header .navigation ul li {
+        width: 100%;
+    }
+
+    .header .navigation ul li a {
+        padding: 8px 30px 8px 10%;
+    }
+
+    .header .navigation ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .header .navigation ul li ul li {
+        background-color: rgba(1, 1, 1, 0.7);
+    }
+
+    .header .navigation ul li ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .title {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        right: 20%;
+        text-align: center;
+        background-size: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: x-large;
+    }
+}
+
+#toggle:checked~.navigation {
+    display: block;
+}
+
+
+/* * ============ Footer ========== */
+@media screen and (max-width:950px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

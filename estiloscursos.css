@@ -1,0 +1,170 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #F4F4F4;
+	font-family: 'calibri';
+}
+
+/* * ============================== */
+/* * ============ MAIN ========== */
+/* * ============================== */
+
+.container {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container.bigger {
+    max-width: 1320px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.posts-section {
+    padding: 80px 0 0;
+    text-align: center;
+}
+
+.posts-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 2%;
+}
+
+.posts-section article {
+    flex-basis: 32%;
+}
+
+.posts-section article .post-displayer {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.inner-header {
+    min-height: 100px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.4s;
+    width: 100%;
+}
+
+.posts-section article.active .inner-header,
+.posts-section article.post-displayer:hover .inner-header {
+    background-color: #D3413F;
+}
+
+.posts-section h2 a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.6em;
+}
+
+.posts-section .thumb {
+    min-height: 190px;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 100%;
+}
+
+button:focus {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+button {
+    background-color: transparent;
+    color: #D3413F;
+    padding: 12px 23px;
+    border: 1px solid #D3413F;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    transition: all .4s;
+    font-size: 14px;
+    font-family: 'GT America', Helvetica, Arial;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #D3413F;
+    color: #fff;
+}
+.posts-section button {
+    margin: 20px auto 20px;
+    display: inline-block;
+}
+
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+
+@media screen and (max-width: 950px) {
+    
+    .posts-section article.active .inner-header,
+    .posts-section article.post-displayer:hover .inner-header {
+        justify-items: center;
+}
+}
+
+/* * ====== TABLETS ========= */
+
+@media screen and (max-width:1000px) {
+    .posts-section .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 2%;
+    }
+
+    .posts-section h2 a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 1.6em;
+    }
+}
+
+/* * ====== SMARTPHONE ========= */
+
+@media screen and (max-width:540px) {
+    .posts-section .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px 2%;
+    }
+
+    .posts-section h2 a {
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 1.6em;
+    }
+}
