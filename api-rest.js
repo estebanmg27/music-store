@@ -1,4 +1,4 @@
-const url = 'https://mocki.io/v1/c17cc0bd-d4f5-4e76-965d-50be94806678';
+const url = 'https://mocki.io/v1/6f20dcbb-65ec-4e4e-a8b0-34ac1446ef8f';
 
 fetch(url)
     .then(response => response.json())
